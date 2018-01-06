@@ -12,5 +12,5 @@ program coarray1
 
   sync all
 
-  print *, "Image ", me, " has a(2) = ", a(2)[me], "; neighbour has ", a(2)[right]
+  print *, "Image ", me, " has a(2) = ", a(2)[me], "; neighbour has ", a(2)[right], "; a = ", a
 end program coarray1

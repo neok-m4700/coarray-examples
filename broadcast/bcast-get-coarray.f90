@@ -3,8 +3,9 @@ program broadcast2
     integer :: a[*] 
 
     if (this_image() == 1) then 
-        print *, "Please enter a number." 
-        read *, a
+        ! print *, "Please enter a number." 
+        ! read *, a
+        open(7, file="inp"); read(7, *) a; close(7)
     end if
 
     sync all 
